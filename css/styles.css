@@ -60,6 +60,40 @@ header {
 
 
 /* MAIN */
+main {
+	padding: 10vh 0;
+}
+
+.display {
+	margin: 2vh 20vw;
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	overflow-y: scroll;
+	padding: 0.5vh 0;
+	color: black;
+}
+
+#display-index {
+	background-color: #FFF796;
+}
+
+#display-one {
+	background-color: #E8AC89;
+}
+
+#display-two {
+	background-color: #F6A4FF;
+}
+
+#display-three {
+	background-color: #89B1E8;
+}
+
+#message {
+	background-color: #96FFB0;
+}
 
 
 

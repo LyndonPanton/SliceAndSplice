@@ -46,16 +46,26 @@ window.onload = function(event) {
 		let result = secondEdit.slice();
 		result.splice(insertion, 0, ...firstEdit);
 
-		console.log([firstEdit, secondEdit, insertion, result]);
 		display([firstEdit, secondEdit, insertion, result]);
 	}
 
-	function toggle() {
+	function toggle(chevron) {
+		let task = document.getElementById("task");
+		console.log(0);
 
+		if (Array.from(chevron.classList).indexOf("fa-chevron-up") === -1) {
+			chevron.classList.remove("fa-chevron-down");
+			chevron.classList.add("fa-chevron-up");
+		} else {
+			chevron.classList.remove("fa-chevron-up");
+			chevron.classList.add("fa-chevron-down");
+		}
 	}
 
 	let chevron = document.getElementsByClassName("fas")[0];
-	chevron.addEventListener("click", toggle);
+	chevron.addEventListener("click", function(event) {
+		toggle(this);
+	});
 
 	splicer(arr1, arr2, n);
 };

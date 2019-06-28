@@ -2,6 +2,11 @@
 /* yummy jelly (@scheme color) */
 
 /* GENERAL */
+::-webkit-scrollbar {
+	display: none;
+	margin: 0;
+}
+
 body, html {
 	margin: 0;
 	width: 100%;

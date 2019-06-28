@@ -15,7 +15,7 @@
 > 1. This project requires a browser
 > 2. The browser must have JavaScript available and enabled
 
-## Extra Information
+## Extra Information
 > 1. This was done for one of freecodecamp's Basic Algorithm Scripting activities
 
 ## Preview

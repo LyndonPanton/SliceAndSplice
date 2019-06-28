@@ -50,5 +50,12 @@ window.onload = function(event) {
 		display([firstEdit, secondEdit, insertion, result]);
 	}
 
+	function toggle() {
+
+	}
+
+	let chevron = document.getElementsByClassName("fas")[0];
+	chevron.addEventListener("click", toggle);
+
 	splicer(arr1, arr2, n);
 };

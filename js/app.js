@@ -30,17 +30,24 @@ window.onload = function(event) {
 			d1.textContent = "[" + results[0].join(", ") + "]";
 			d2.textContent = "[" + results[1].join(", ") + "]";
 			i.textContent = results[2];
-			// r.textContent = "...";
 			r.textContent = "[" + results[3].join(", ") + "]";
 		}
 	}
 
-	function splicer(first, second, insertion) {
-		let result = second.slice();
-		result.splice(insertion, 0, ...arr1);
+	// Bonus
+	function filter(number) {
+		return typeof(number) === "number";
+	}
 
-		console.log([first, second, insertion, result]);
-		display([first, second, insertion, result]);
+	function splicer(first, second, insertion) {
+		let firstEdit = first.filter(filter);
+		let secondEdit = second.filter(filter);
+
+		let result = secondEdit.slice();
+		result.splice(insertion, 0, ...firstEdit);
+
+		console.log([firstEdit, secondEdit, insertion, result]);
+		display([firstEdit, secondEdit, insertion, result]);
 	}
 
 	splicer(arr1, arr2, n);
